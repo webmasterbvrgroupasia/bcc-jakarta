@@ -6,14 +6,20 @@ import Calendar from "@/Components/Calendar.jsx";
 import eventBbc from "@/utils/eventBbc.js";
 import {useState} from "react";
 
+
 export default function Welcome() {
     const [dateTimeEvent, setDateTimeEvent] = useState([]);
+    const [event, setEvent] = useState([]);
 
     const handleClickDate = event => {
         const data = eventBbc().filter((item) => new Date(item.datetime).getTime() === (new Date(event.$d).getTime()));
         const sliceData = data.slice(0, 4);
         setDateTimeEvent(sliceData)
     }
+
+    useState(() => {
+        setEvent(eventBbc)
+    }, []);
 
     const handleTimeGetMonthYear = dateYearTime => {
         const dateTime = new Date(dateYearTime);
@@ -327,8 +333,8 @@ export default function Welcome() {
                         </h5>
 
                         <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-4">
-                            <div className="h-full md:h-52 w-full bg-white">
-                                <Calendar handleClick={handleClickDate}/>
+                            <div className="h-full md:h-52 w-full">
+                                <Calendar event={event} handleClick={handleClickDate}/>
                             </div>
                             <div className="md:col-span-1 lg:col-span-2">
                                 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2">
