@@ -5,8 +5,9 @@ import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
 
 
 export default function Calendar({ handleClick, event }) {
-    const color = "#ffffff";
-    
+    // const color = "#ffffff";
+    const color = "rgba(255,255,255,0.25)";
+
 
 
     return (
@@ -18,13 +19,13 @@ export default function Calendar({ handleClick, event }) {
                     sx={{
                         "& .MuiPickersDay-root": {
                             color:  'white',
-                            backgroundColor: 'red'
+                            backgroundColor: color
                         },
                         color: 'white',
-                        svg: { color },
-                        input: { color },
-                        label: { color },
-                        span: {color},
+                        svg: { color: "#fff" },
+                        input: {color: "#fff"  },
+                        label: { color: "#fff"  },
+                        span: {color: "#fff" },
                     }}
                 />
             </LocalizationProvider>
