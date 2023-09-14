@@ -326,30 +326,30 @@ export default function Welcome() {
                             Events in BCC Jakarta
                         </h5>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 py-1 mt-4">
-                            <div className="h-52 col-span-2">
+                        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-4">
+                            <div className="h-full md:h-52 w-full bg-white">
                                 <Calendar handleClick={handleClickDate}/>
                             </div>
-                            <div className="col-start-4 row-span-2">
-                              <div className="grid grid-cols-2 gap-2">
-                                  {
-                                      dateTimeEvent.length !== 0 ? (
-                                        dateTimeEvent.map(item => (
-                                            <EventsCard image={item.image} eventTitle={item.title} date={handleTimeGetMonthYear(item.datetime)}/>
-                                        ))
-                                      ): (
-                                          <>
-                                              <div className="text-neutral-400">
-                                                  <EventsCard
-                                                      image={'https://staging.grandlandcorp.com/blogpost/1692761089.jpg'}
-                                                      eventTitle={'Please check again later'}
-                                                      date={handleTimeGetMonthYear(new Date())}
-                                                      description={'Currently we don\'t have any upcoming events'}/>
-                                              </div>
-                                          </>
-                                      )
-                                  }
-                              </div>
+                            <div className="md:col-span-1 lg:col-span-2">
+                                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2">
+                                    {
+                                        dateTimeEvent.length !== 0 ? (
+                                            dateTimeEvent.map(item => (
+                                                <EventsCard image={item.image} eventTitle={item.title} date={handleTimeGetMonthYear(item.datetime)}/>
+                                            ))
+                                        ): (
+                                            <>
+                                                <div className="text-neutral-400">
+                                                    <EventsCard
+                                                        image={'https://staging.grandlandcorp.com/blogpost/1692761089.jpg'}
+                                                        eventTitle={'Please check again later'}
+                                                        date={handleTimeGetMonthYear(new Date())}
+                                                        description={'Currently we don\'t have any upcoming events'}/>
+                                                </div>
+                                            </>
+                                        )
+                                    }
+                                </div>
                                 {
                                     dateTimeEvent.length >= 3 ? (
                                         <div className="text-white">
@@ -361,7 +361,7 @@ export default function Welcome() {
                                 }
                             </div>
 
-                       </div>
+                        </div>
                     </div>
                 </section>
             </MainLayout>
