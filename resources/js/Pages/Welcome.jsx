@@ -1,8 +1,29 @@
 import { Link, Head } from "@inertiajs/react";
 import MainLayout from "@/Layouts/MainLayout";
 import DivisionCard from "@/Components/DivisionCard";
-import EventsCard from "@/Components/EventsCard";
+import EventsCard from "@/Components/EventsCard.jsx";
+import Calendar from "@/Components/Calendar.jsx";
+import eventBbc from "@/utils/eventBbc.js";
+import {useState} from "react";
+
 export default function Welcome() {
+    const [dateTimeEvent, setDateTimeEvent] = useState([]);
+
+    const handleClickDate = event => {
+        const data = eventBbc().filter((item) => new Date(item.datetime).getTime() === (new Date(event.$d).getTime()));
+        const sliceData = data.slice(0, 4);
+        setDateTimeEvent(sliceData)
+    }
+
+    const handleTimeGetMonthYear = dateYearTime => {
+        const dateTime = new Date(dateYearTime);
+        const daysData = dateTime.getDate();
+        const month = dateTime.toLocaleString('default', {month: 'long'});
+        const year = dateTime.getFullYear();
+
+        return `${daysData} ${month} ${year}`;
+    }
+
     return (
         <>
             <Head title="Welcome" />
@@ -187,23 +208,23 @@ export default function Welcome() {
                             <DivisionCard
                                 image={"images/logo/bvr-ga.png"}
                                 title={"BVR Group Asia"}
-                                description="The Acronym BVR stands for Building Valuable Relationships. BVR Group Asia is empowered by decades of business experience 
-                                in various countries throughout the world.We are a full-service organization that successfully and transparently manages client 
+                                description="The Acronym BVR stands for Building Valuable Relationships. BVR Group Asia is empowered by decades of business experience
+                                in various countries throughout the world.We are a full-service organization that successfully and transparently manages client
                                 expectations throughout the full project life cycle"
                                 href={"https://bvrgroupasia.com"}
                             />
                             <DivisionCard
                                 image={"images/logo/grand-land-corp.png"}
                                 title={"Grand Land Corp"}
-                                description="A real estate development company with the core mandate of identifying, acquiring and managing value-added 
+                                description="A real estate development company with the core mandate of identifying, acquiring and managing value-added
                                 residential, hospitality, and commercial real estate assets, in strategically targeted locations throughout Asia."
                                 href={"https://grandlandcorp.com"}
                             />
                             <DivisionCard
                                 image={"images/logo/bvr-studio.png"}
                                 title={"BVR Studio"}
-                                description="BVR Studio is an industry leading facility with cutting edge technologies and offers the most complete production 
-                                studio experience in the area. Our facility can provide a creatively inspiring environment where great ideas become 
+                                description="BVR Studio is an industry leading facility with cutting edge technologies and offers the most complete production
+                                studio experience in the area. Our facility can provide a creatively inspiring environment where great ideas become
                                 extraordinary productions.
                                 "
                                 href={"https://bvrgroupasia.com"}
@@ -212,33 +233,17 @@ export default function Welcome() {
                             <DivisionCard
                                 image={"images/logo/bvr-heartbeat.png"}
                                 title={"BVR Heartbeat"}
-                                description="The # 1 indoor cycling center offering High Intensity Interval Training (HITT) Classes. Unlike the traditional spin classes 
-                                of the past, our cycling coaches and trainers have personally developed a one of a kind, high intensity and 
+                                description="The # 1 indoor cycling center offering High Intensity Interval Training (HITT) Classes. Unlike the traditional spin classes
+                                of the past, our cycling coaches and trainers have personally developed a one of a kind, high intensity and
                                 inspirational training experience that will challenge you and test your limits both physically and mentally."
                                 href={"https://bvrheartbeat.com"}
                             />
-                            {/* <DivisionCard
-                                title={"Bali Beauty Center"}
-                                description="As the first, luxury, anti-aging clinic that embraces island paradise hospitality, our Centers are staffed by top aesthetic
-                                beauty specialists, utilizing the latest technologies and techniques and offer a wide range of anti-aging services that 
-                                will leave you looking and feeling your very best"
-                                href={"https://balibeautycentre.com"}
-                            />
-                            <DivisionCard
-                                title={"Pickleball Court"}
-                                description="The ultimate destination for Pickleball enthusiasts! Whether you are an experienced player or just
-                                beginning, our state-of-the-art facility is designed to elevate your Pickleball experience. Join our friendly 
-                                community of Pickleball enthusiasts, where sportsmanship and camaraderie thrive. Stop in to challenge 
-                                your friends, to meet new players, and to enjoy a highly enjoyable and competitive Pickleball experience.
-                                "
-                                href={"https://bvrgroupasia.com"}
-                            /> */}
                             <DivisionCard
                                 title={"Herberto Gelato"}
                                 image={"images/logo/herberto.png"}
-                                description="Every scoop of Herberto Gelato is a taste you have never experienced before and a taste that will never 
+                                description="Every scoop of Herberto Gelato is a taste you have never experienced before and a taste that will never
                                 fade from your taste buds. Our gelato artisans are dream weavers, blending only the finest ingredients
-                                into a creamy delight that you will want to experience again and again. Melted memories of our delightful 
+                                into a creamy delight that you will want to experience again and again. Melted memories of our delightful
                                 Gelato are the best memories of all.
                                 "
                                 href={"https://bvrgroupasia.com"}
@@ -321,18 +326,42 @@ export default function Welcome() {
                             Events in BCC Jakarta
                         </h5>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 py-14">
-                            <div>
-                            <div className="text-neutral-400">
-                                Currently we don't have any upcoming events.
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 py-1 mt-4">
+                            <div className="h-52 col-span-2">
+                                <Calendar handleClick={handleClickDate}/>
                             </div>
-                            <div className="text-neutral-400">
-                                Please check again later.
+                            <div className="col-start-4 row-span-2">
+                              <div className="grid grid-cols-2 gap-2">
+                                  {
+                                      dateTimeEvent.length !== 0 ? (
+                                        dateTimeEvent.map(item => (
+                                            <EventsCard image={item.image} eventTitle={item.title} date={handleTimeGetMonthYear(item.datetime)}/>
+                                        ))
+                                      ): (
+                                          <>
+                                              <div className="text-neutral-400">
+                                                  <EventsCard
+                                                      image={'https://staging.grandlandcorp.com/blogpost/1692761089.jpg'}
+                                                      eventTitle={'Please check again later'}
+                                                      date={handleTimeGetMonthYear(new Date())}
+                                                      description={'Currently we don\'t have any upcoming events'}/>
+                                              </div>
+                                          </>
+                                      )
+                                  }
+                              </div>
+                                {
+                                    dateTimeEvent.length >= 3 ? (
+                                        <div className="text-white">
+                                            <button className={"bg-blue-500 shadow-lg shadow-blue-500/50 p-2 rounded hover:bg-blue-40 hover:shadow-blue-300"}>
+                                                <Link>View All Event</Link>
+                                            </button>
+                                        </div>
+                                    ): (null)
+                                }
                             </div>
-                            </div>
-                            {/* <EventsCard image={"https://staging.grandlandcorp.com/blogpost/1692761089.jpg"} eventTitle={"Event Sample"} date={"29 September 2023"}/>
-                            <EventsCard image={"https://staging.grandlandcorp.com/blogpost/1692761089.jpg"} eventTitle={"Event Sample"} date={"29 September 2023"}/> */}
-                        </div>
+
+                       </div>
                     </div>
                 </section>
             </MainLayout>
