@@ -109,7 +109,7 @@ export default function Welcome() {
                                     alt="Bali Coffee Club Jakarta Menu"
                                 />
                             </div>
-                            <div className=" bg-neutral-800 rounded-lg overflow-hidden">
+                            <div className="bg-neutral-800 rounded-lg overflow-hidden">
                                 <img
                                     src="/images/3.webp"
                                     className="h-52 rounded-lg object-cover w-full"
@@ -130,7 +130,7 @@ export default function Welcome() {
                                     alt="Bali Coffee Club Jakarta Menu"
                                 />
                             </div>
-                            <div className=" bg-neutral-800 rounded-lg overflow-hidden">
+                            <div className="bg-neutral-800 rounded-lg overflow-hidden">
                                 <img
                                     src="/images/4.webp"
                                     className="h-52 rounded-lg object-cover w-full"
@@ -186,7 +186,7 @@ export default function Welcome() {
 
                                     Here, you'll have an exciting community experience, only at Bali Coffee Club Jakarta.
 
-                                    A welcoming and stylish atmosphere, excellent service, professionl baristas, wonderful music, and of course, Arabica coffee with the touch of Bali.
+                                    A welcoming and stylish atmosphere, excellent service, professional baristas, wonderful music, and of course, Arabica coffee with the touch of Bali.
                                 </p>
                             </div>
                         </div>
@@ -216,14 +216,6 @@ export default function Welcome() {
                                 href={"https://bvrgroupasia.com"}
                             />
 
-                            <DivisionCard
-                                image={"images/logo/bvr-heartbeat.png"}
-                                title={"BVR Heartbeat"}
-                                description="The # 1 indoor cycling center offering High Intensity Interval Training (HITT) Classes. Unlike the traditional spin classes
-                                of the past, our cycling coaches and trainers have personally developed a one of a kind, high intensity and
-                                inspirational training experience that will challenge you and test your limits both physically and mentally."
-                                href={"https://bvrheartbeat.com"}
-                            />
                             <DivisionCard
                                 title={"Herberto Gelato"}
                                 image={"images/logo/herberto.png"}
