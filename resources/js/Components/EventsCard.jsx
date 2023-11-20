@@ -9,7 +9,7 @@ function EventsCard({eventTitle, date, image}) {
                     <img
                         src={image}
                         className="w-full h-72 object-cover"
-                        alt=""
+                        alt={"BCC Jakarta - " + eventTitle}
                     />
                 </div>
                 <div className="p-4 space-y-4">

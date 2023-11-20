@@ -208,15 +208,6 @@ export default function Welcome() {
                                 "
                                 href={"https://bvrgroupasia.com"}
                             />
-
-                            <DivisionCard
-                                image={"images/logo/bvr-heartbeat.png"}
-                                title={"BVR Heartbeat"}
-                                description="The # 1 indoor cycling center offering High Intensity Interval Training (HITT) Classes. Unlike the traditional spin classes 
-                                of the past, our cycling coaches and trainers have personally developed a one of a kind, high intensity and 
-                                inspirational training experience that will challenge you and test your limits both physically and mentally."
-                                href={"https://bvrheartbeat.com"}
-                            />
                             {/* <DivisionCard
                                 title={"Bali Beauty Center"}
                                 description="As the first, luxury, anti-aging clinic that embraces island paradise hospitality, our Centers are staffed by top aesthetic
@@ -316,12 +307,12 @@ export default function Welcome() {
                     id="eventSection"
                     className="py-8 lg:py-24 bg-gradient-to-b from-black to-neutral-950 w-full"
                 >
-                    <div className="max-w-full md:max-w-2xl lg:max-w-6xl mx-auto px-4 md:px-0 lg:px-0 rounded-lg">
+                    <div className="max-w-full md:max-w-2xl lg:max-w-6xl mx-auto px-4 md:px-0 lg:px-0 rounded-lg space-y-4">
                         <h5 className="text-white font-bold text-4xl">
                             Events in BCC Jakarta
                         </h5>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 py-14">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                             <div>
                             <div className="text-neutral-400">
                                 Currently we don't have any upcoming events.
