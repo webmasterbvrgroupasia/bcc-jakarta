@@ -5,10 +5,7 @@ import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
 
 
 export default function Calendar({ handleClick, event }) {
-    // const color = "#ffffff";
     const color = "rgba(255,255,255,0.25)";
-
-
 
     return (
         <div className="">

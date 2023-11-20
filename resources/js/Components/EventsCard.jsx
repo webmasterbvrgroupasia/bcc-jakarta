@@ -8,13 +8,8 @@ function EventsCard({eventTitle, date, image, description}) {
                 <div>
                     <img
                         src={image}
-<<<<<<< HEAD
-                        className="w-full h-72 object-cover"
-                        alt={"BCC Jakarta - " + eventTitle}
-=======
                         className="w-full h-52 object-cover rounded"
                         alt=""
->>>>>>> 91e30dae555d04c7b69f30b9fd0f1d38ce21eba3
                     />
                 </div>
                 <div className="p-4 space-y-4">

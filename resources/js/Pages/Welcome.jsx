@@ -32,7 +32,7 @@ export default function Welcome() {
 
     return (
         <>
-            <Head title="Welcome" />
+            <Head title="Enjoy a Cup of Bali Arabica Coffee at Our Coffee Shop in Jakarta" />
             <MainLayout>
                 <header className="bg-gradient-to-b from-black to-neutral-950 w-full h-screen md:h-[75vh] lg:h-screen flex items-center justify-center -z-10">
                     <video
@@ -54,20 +54,17 @@ export default function Welcome() {
                                 alt="Bali Coffee Club"
                             />
                             <h1 className="leading-none text-4xl lg:text-6xl font-extrabold mb-6 text-center text-white">
-                                We're now brewing in Jakarta!
+                                Bali Coffee Club Jakarta - Enjoy the Taste of Bali Arabica Coffee
                             </h1>
                             <p className="text-center text-base lg:text-xl max-w-3xl mx-auto font-normal text-gray-200">
-                                World class coffee, grown and roasted in Bali,
-                                it is the perfect way to start any day. Bring
-                                the energy of Bali into your morning with every
-                                cup of Bali Coffee Club (BCC).
+                                Bali Coffee Club Jakarta (BCC Jakarta) serves you Bali Arabica coffee, so you can experience the taste of Bali in every cup. Start your day the right way with a cup of BCC Jakarta coffee!
                             </p>
                             <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row space-x-0 md:space-x-2 w-full justify-center lg:space-x-[8px] mt-8 text-white ">
-                                <Link className="px-8 py-3.5 text-center bg-[#ff5700] rounded-lg text-base font-medium">
+                                <Link className="px-8 py-3.5 text-center bg-[#ff5700] rounded-lg text-base font-medium" title={`about bali coffee club`}>
                                     About Bali Coffee Club
                                 </Link>
                                 <a
-                                    href="https://www.youtube.com/playlist?list=PLH13vI_kaCue5AH0sFwZBlOQnGE61bxtQ"
+                                    href="https://www.youtube.com/playlist?list=PLH13vI_kaCue5AH0sFwZBlOQnGE61bxtQ" title={`link youtube`}
                                     target="blank"
                                     className="px-8 py-3.5 bg-gray-800 border-gray-600 border rounded-lg font-medium flex justify-center items-center space-x-2 text-gray-400"
                                 >
@@ -89,16 +86,13 @@ export default function Welcome() {
                 </header>
                 <section
                     id="welcomeSection"
-                    className="py-32 lg:pt-32 lg:pb-24 w-full bg-gradient-to-b from-neutral-950 to-black"
-                >
+                    className="py-32 lg:pt-32 lg:pb-24 w-full bg-gradient-to-b from-neutral-950 to-black">
                     <div className="max-w-full px-4 md:max-w-2xl lg:max-w-6xl mx-auto">
                         <h2 className="text-white text-center text-3xl lg:text-4xl font-extrabold">
-                            Welcome to Bali Coffee Club
+                            From Bali to Jakarta, We Bring Arabica
                         </h2>
                         <p className="text-gray-400 text-center max-w-full lg:max-w-lg mx-auto mt-4">
-                            Thinking of a trip to Bali, but you have no free
-                            time? Here we are ready, to make you feel like a
-                            Bali Coffee Clubber.
+                            Feel the combination of Balinese culture and nature at our coffee shop in Jakarta - Bali Coffee Club Jakarta (BCC Jakarta)
                         </p>
                         <div className="grid grid-cols-4 mt-8 gap-4">
                             <div className="col-span-2 bg-neutral-800 rounded-lg overflow-hidden">
@@ -153,23 +147,17 @@ export default function Welcome() {
                 >
                     <div className="bg-[#ff5700] px-4 py-8 lg:py-24">
                         <div className="max-w-full md:max-w-2xl lg:max-w-6xl mx-auto">
-                            <h3 className="text-white leading-tight font-extrabold text-4xl max-w-lg">
-                                The Story Behind Bali, the Coffee, and the Club
-                            </h3>
+                            <h2 className="text-white leading-tight font-extrabold text-4xl max-w-lg">
+                                Bali Coffee Club Jakarta - From Balinese Culture to Coffee Lovers
+                            </h2>
                             <p className="max-w-3xl text-gray-200 mt-2 text-base md:text-base lg:text-lg">
-                                Bali is home to a rich culture and holds a
-                                myriad of ways to celebrate it. At Bali Coffee
-                                Club, we celebrate the culture surrounding
-                                coffee, which permeates through the many islands
-                                of Indonesia. From the beautiful land of Bali to
-                                your kitchen, wherever it may be, we share a
-                                part of our culture directly with you.
+                                From the beautiful landscape of Bali to your cup, we share the beauty of Bali through Arabica coffee beans directly to you. Experience the beauty of Bali in every cup of Bali Coffee Club Jakarta.
                             </p>
                             <a
-                                href="https://balicoffeeclub.com"
+                                href="https://balicoffeeclub.com" title={'bali coffee club'}
                                 className="text-white font-semibold block w-fit mt-4"
                             >
-                                Find Out More
+                                Discover the Culture
                             </a>
                         </div>
                     </div>
@@ -188,25 +176,17 @@ export default function Welcome() {
                     className="py-8 lg:py-24 px-4 md:px-0 lg:px-0 bg-gradient-to-b from-neutral-950 to-black w-full"
                 >
                     <div className="max-w-full md:max-w-2xl lg:max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-start gap-10">
-                        <div className="col-span-2">
-                            <div className="">
-                                <h4 className="text-white font-extrabold text-3xl lg:text-4xl mb-2">
-                                    One Place, One Connection to Expand your
-                                    Network only at Bali Coffee Club Jakarta
-                                </h4>
-                                <p className="text-gray-400 leading-relaxed text-lg">
-                                    At Bali Coffee Club Jakarta, you will
-                                    discover an inviting, stylish, and welcoming
-                                    atmosphere, excellent customer service,
-                                    friendly and knowledgeable baristas,
-                                    wonderful music, and of course, serving the
-                                    best coffee anywhere in Jakarta. As Coffee
-                                    is the most consumed beverage on the planet,
-                                    combined with our coffee made from our own
-                                    home grown coffee beans, with an exciting
-                                    community experience, you’re assured to keep
-                                    coming back for more. All of this and more,
-                                    you’ll discover at Bali Coffee Club Jakarta.
+                        <div className="col-span-2"  itemScope itemType={"https://jakarta.balicoffeeclub.com"}>
+                            <div>
+                                <h2 itemProp={"header"} className="text-white font-extrabold text-3xl lg:text-4xl mb-2">
+                                    One Place, One Connection - only at Bali Coffee Club Jakarta
+                                </h2>
+                                <p className="text-gray-400 leading-relaxed text-lg" itemProp={"description"}>
+                                    We present a perfect settings to enjoy the real Balinese atmosphere - for you, coffee passion!
+
+                                    Here, you'll have an exciting community experience, only at Bali Coffee Club Jakarta.
+
+                                    A welcoming and stylish atmosphere, excellent service, professionl baristas, wonderful music, and of course, Arabica coffee with the touch of Bali.
                                 </p>
                             </div>
                         </div>
@@ -235,30 +215,21 @@ export default function Welcome() {
                                 "
                                 href={"https://bvrgroupasia.com"}
                             />
-                            {/* <DivisionCard
-                                title={"Bali Beauty Center"}
-                                description="As the first, luxury, anti-aging clinic that embraces island paradise hospitality, our Centers are staffed by top aesthetic
-                                beauty specialists, utilizing the latest technologies and techniques and offer a wide range of anti-aging services that 
-                                will leave you looking and feeling your very best"
-                                href={"https://balibeautycentre.com"}
-                            />
-                            <DivisionCard
-                                title={"Pickleball Court"}
-                                description="The ultimate destination for Pickleball enthusiasts! Whether you are an experienced player or just
-                                beginning, our state-of-the-art facility is designed to elevate your Pickleball experience. Join our friendly 
-                                community of Pickleball enthusiasts, where sportsmanship and camaraderie thrive. Stop in to challenge 
-                                your friends, to meet new players, and to enjoy a highly enjoyable and competitive Pickleball experience.
-                                "
-                                href={"https://bvrgroupasia.com"}
-                            /> */}
 
-                            
+                            <DivisionCard
+                                image={"images/logo/bvr-heartbeat.png"}
+                                title={"BVR Heartbeat"}
+                                description="The # 1 indoor cycling center offering High Intensity Interval Training (HITT) Classes. Unlike the traditional spin classes
+                                of the past, our cycling coaches and trainers have personally developed a one of a kind, high intensity and
+                                inspirational training experience that will challenge you and test your limits both physically and mentally."
+                                href={"https://bvrheartbeat.com"}
+                            />
                             <DivisionCard
                                 title={"Herberto Gelato"}
                                 image={"images/logo/herberto.png"}
                                 description="Every scoop of Herberto Gelato is a taste you have never experienced before and a taste that will never
                                 fade from your taste buds. Our gelato artisans are dream weavers, blending only the finest ingredients
-                                into a creamy delight that you will want to experience again and again. Melted memories of our delightful
+                                into a creamy delight that you will want to experience again and fagain. Melted memories of our delightful
                                 Gelato are the best memories of all.
                                 "
                                 href={"https://bvrgroupasia.com"}
@@ -273,15 +244,15 @@ export default function Welcome() {
                 >
                     <div className="max-w-full md:max-w-2xl lg:max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
                         <div className="">
-                            <h4 className="text-neutral-400">
+                            <h2 className="text-neutral-400">
                                 Bali Coffee Club
-                            </h4>
-                            <h5 className="text-white font-extrabold text-4xl">
-                                Our Other Outlets
-                            </h5>
+                            </h2>
+                            <h3 className="text-white font-extrabold text-4xl">
+                                Find Our Other Coffee Shops
+                            </h3>
                         </div>
                         <div className="col-span-2 grid grid-cols-1 lg:grid-cols-2 gap-5 text-white">
-                            <Link
+                            <Link title={`bcc canggu`}
                                 className="h-72 text-2xl bg-cover bg-center rounded-lg overflow-hidden font-extrabold"
                                 style={{
                                     backgroundImage: `url('https://balicoffeeclub.com/img/bcc-1.webp')`,
@@ -291,7 +262,7 @@ export default function Welcome() {
                                     BCC Canggu
                                 </div>
                             </Link>
-                            <Link
+                            <Link title={`Bcc Sunset`}
                                 className="h-72 text-2xl bg-cover bg-center rounded-lg overflow-hidden font-extrabold"
                                 style={{
                                     backgroundImage: `url('https://balicoffeeclub.com/img/bcc-sunset.webp')`,
@@ -306,9 +277,9 @@ export default function Welcome() {
                 </section>
                 <section className="bg-gradient-to-b from-neutral-950 to-black w-full">
                     <div className="max-w-full md:max-w-2xl lg:max-w-6xl mx-auto bg-neutral-900 py-14 px-4 md:px-0 lg:px-0 rounded-lg">
-                        <h5 className="text-white text-4xl font-extrabold text-center">
+                        <h3 className="text-white text-4xl font-extrabold text-center">
                             Wholesale?
-                        </h5>
+                        </h3>
                         <p className="mt-4 text-neutral-400 text-center max-w-lg mx-auto">
                             If you have any inquiries regarding wholesale.
                             Please leave your email address below. Our amazing
@@ -330,53 +301,6 @@ export default function Welcome() {
                             </button>
                             <div></div>
                         </form>
-                    </div>
-                </section>
-                <section
-                    id="eventSection"
-                    className="py-8 lg:py-24 bg-gradient-to-b from-black to-neutral-950 w-full"
-                >
-                    <div className="max-w-full md:max-w-2xl lg:max-w-6xl mx-auto px-4 md:px-0 lg:px-0 rounded-lg space-y-4">
-                        <h5 className="text-white font-bold text-4xl">
-                            Events in BCC Jakarta
-                        </h5>
-
-                        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-4">
-                            <div className="h-full md:h-52 w-full">
-                                <Calendar event={event} handleClick={handleClickDate}/>
-                            </div>
-                            <div className="md:col-span-1 lg:col-span-2">
-                                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2">
-                                    {
-                                        dateTimeEvent.length !== 0 ? (
-                                            dateTimeEvent.map(item => (
-                                                <EventsCard image={item.image} eventTitle={item.title} date={handleTimeGetMonthYear(item.datetime)}/>
-                                            ))
-                                        ): (
-                                            <>
-                                                <div className="text-neutral-400">
-                                                    <EventsCard
-                                                        image={'https://staging.grandlandcorp.com/blogpost/1692761089.jpg'}
-                                                        eventTitle={'Please check again later'}
-                                                        date={handleTimeGetMonthYear(new Date())}
-                                                        description={'Currently we don\'t have any upcoming events'}/>
-                                                </div>
-                                            </>
-                                        )
-                                    }
-                                </div>
-                                {
-                                    dateTimeEvent.length >= 3 ? (
-                                        <div className="text-white">
-                                            <button className={"bg-blue-500 shadow-lg shadow-blue-500/50 p-2 rounded hover:bg-blue-40 hover:shadow-blue-300"}>
-                                                <Link>View All Event</Link>
-                                            </button>
-                                        </div>
-                                    ): (null)
-                                }
-                            </div>
-
-                        </div>
                     </div>
                 </section>
             </MainLayout>

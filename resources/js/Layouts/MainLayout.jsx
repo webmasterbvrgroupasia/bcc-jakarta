@@ -44,6 +44,7 @@ export default function MainLayout({ children }) {
                     <Link
                         to="welcomeSection"
                         smooth={true}
+                        title={"welcome"}
                         className="text-white font-extrabold text-xl w-full text-left py-4"
                     >
                         Welcome
@@ -51,6 +52,7 @@ export default function MainLayout({ children }) {
                     <Link
                         to="storySection"
                         smooth={true}
+                        title={"The Story Behind Bali Coffee Club"}
                         className="text-white font-extrabold text-xl w-full text-left py-4"
                     >
                         The Story Behind Bali Coffee Club
@@ -58,13 +60,15 @@ export default function MainLayout({ children }) {
                     <Link
                         to="featuresSection"
                         smooth={true}
+                        title={"What's in Bali Coffee Club Jakarta"}
                         className="text-white font-extrabold text-xl w-full text-left py-4"
                     >
                         What's in Bali Coffee Club Jakarta
-                    </Link>
+                </Link>
                     <Link
                         to="featuresSection"
                         smooth={true}
+                        title={"Our Outlets"}
                         className="text-white font-extrabold text-xl w-full text-left py-4"
                     >
                         Our Outlets
@@ -115,6 +119,7 @@ export default function MainLayout({ children }) {
                         <a
                             href="https://wa.me/6288218466715"
                             target="blank"
+                            title={`contact us`}
                             className="text-white"
                         >
                             Contact Us
@@ -134,17 +139,20 @@ export default function MainLayout({ children }) {
                             <a
                                 href="#"
                                 className="text-neutral-400 font-medium"
+                                title={"instagram"}
                             >
                                 Instagram
                             </a>
                             <a
                                 href="#"
+                                title={"tiktok"}
                                 className="text-neutral-400 font-medium"
                             >
                                 Tiktok
                             </a>
                             <a
                                 href="#"
+                                title={"facebook"}
                                 className="text-neutral-400 font-medium"
                             >
                                 Facebook
@@ -165,6 +173,7 @@ export default function MainLayout({ children }) {
                                 </p>
                                 <a
                                     target="blank"
+                                    title={"viewo on goggle maps"}
                                     href="https://www.google.com/maps/dir//bvr+group+asia+jakarta+office/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x2e69f142d7827da7:0xfc0ea5a05aa2ba1d?sa=X&ved=2ahUKEwjrg8eB8beAAxVhcmwGHTADD28Q9Rd6BAgmEAA&ved=2ahUKEwjrg8eB8beAAxVhcmwGHTADD28Q9Rd6BAg2EAU"
                                     className="block text-[#FF5700] font-medium text-sm mt-2 w-fit"
                                 >
@@ -182,6 +191,7 @@ export default function MainLayout({ children }) {
                                 </p>
                                 <a
                                     target="blank"
+                                    title={"view on google maps"}
                                     href="https://www.google.com/maps/dir/-8.6814105,115.2007726/Bali+Coffee+Club,+Gang+Meduri+Lingkungan+Taman+Mertanadi,+Kerobokan+Kelod,+Badung+Regency,+Bali/@-8.6926445,115.1725034,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2dd2478ae3378f59:0xea13d19be98b21a6!2m2!1d115.1651734!2d-8.6817193?entry=ttu"
                                     className="block text-[#FF5700] font-medium text-sm mt-2 w-fit"
                                 >
@@ -196,6 +206,7 @@ export default function MainLayout({ children }) {
                                 </p>
                                 <a
                                     target="blank"
+                                    title={"view on google maps"}
                                     href="https://www.google.com/maps/dir//chillhouse+canggu/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x2dd2388c7ef01e35:0x2c90c7289466e681?sa=X&ved=2ahUKEwj97YKx8reAAxVabGwGHbODCG0Q9Rd6BAhfEAA&ved=2ahUKEwj97YKx8reAAxVabGwGHbODCG0Q9Rd6BAhhEAQ"
                                     className="block text-[#FF5700] font-medium text-sm mt-2 w-fit"
                                 >
@@ -215,6 +226,7 @@ export default function MainLayout({ children }) {
                             <a
                                 href="https://balicoffeeclub.com"
                                 target="blank"
+                                title={"bali coffee club main site"}
                                 className="text-neutral-400"
                             >
                                 Bali Coffee Club Main Site
